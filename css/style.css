@@ -304,3 +304,75 @@ header {
     left: 269px;
     bottom: 0;
 }
+
+/*--section Eid Greetings start--*/
+#greetings {
+    position: relative;
+    background: #7862aa;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.docer-1 img {
+    position: absolute;
+    width: 100px;
+    height: 113px;
+    right: 200px;
+    top: 120px;
+    z-index: -1;
+}
+
+.docer-2 img {
+    position: absolute;
+    width: 150px;
+    height: 115px;
+    left: 200px;
+    top: 0;
+    z-index: -1;
+}
+
+#greetings .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 7rem 0 0rem;
+}
+
+#greetings .eid-cards img {
+    width: 355px;
+    height: 370px;
+}
+
+#greetings .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#greetings .steps h2 {
+    font-size: 45px;
+}
+
+#greetings .steps p {
+    font-size: 22px;
+}
+
+#greetings .steps img {
+    width: 270px;
+    height: 80px;
+    margin: 2rem 0;
+    
+}
+
+#greetings .steps a {
+   background: #fcb415;
+   color: var(--color-white);
+   padding: 5px 10px;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+}
+/*--section Eid Greetings end--*/
