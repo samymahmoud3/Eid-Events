@@ -403,3 +403,30 @@ footer .container .svg2 {
     padding-left: 3rem;
 }
 /*--footer end--*/
+
+
+/*--soon page--*/
+#soon {
+    background: url(imgs/soon-bg-en.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#soon .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+#soon .text h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
