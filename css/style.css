@@ -469,15 +469,18 @@ footer .container .svg2 {
     }
 
     /*--header--*/
-    
     /*--navbar start--*/
+    .navbar .container {
+        margin-left: 3rem;
+    }
+
     .navlinks {
         width: 300px;
         height: 100vh;
         position: fixed;
         background: #f8b016;
         top: 0;
-        right: -300px;
+        right: -600px;
         text-align: left;
         z-index: 2;
         display: block;
@@ -520,7 +523,7 @@ footer .container .svg2 {
     .fa-bars {
         position: absolute;
         top: 25px;
-        right: 70px;
+        right: 0px;
         display: block;
         font-size: 30px;
         color: white;
@@ -530,7 +533,7 @@ footer .container .svg2 {
     .fa-x {
         position: absolute;
         top: 20px;
-        right: 140px;
+        left: 50%;
         display: block;
         font-size: 30px;
         color: white;
@@ -588,5 +591,87 @@ footer .container .svg2 {
         align-items: center;
         padding: 3rem 0rem 0 0rem;
         flex-direction: column;
+    }
+}
+
+/*=====Media Queries Phone=====*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /*--header start--*/
+    .navbar .container {
+        margin-left: 0rem;
+    }
+
+    .navlinks {
+        width: 100%;
+    }
+
+    .navbar .log {
+        margin-left: 2rem;
+    }
+
+    .fa-bars {
+        right: 15px;
+    }
+
+    .slider-text {
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    .sldtxt1 a {
+        width: 183px;
+        font-weight: 200;
+        padding: 1px 14px;
+    }
+
+    /*--identity start--*/
+    #identity{
+        overflow: hidden;
+    }
+    #identity .cards {
+        grid-template-columns: 1fr 1fr;
+        padding: 0rem 22%;
+    }
+    #identity .cards .img {
+        height: 218px;
+        width: 150px;
+    }
+    #identity .cards .btn1, #identity .cards .btn2, #identity .cards .btn3, #identity .cards .btn4, #identity .cards .btn5 {
+        width: 150px;
+    }
+    .file-docer-5 img {
+        display: none;
+    }
+    /*--identity end--*/
+
+    /*--greetings start--*/
+    #greetings {
+        overflow: hidden;
+    }
+    #greetings .eid-cards img {
+        width: 290px;
+        height: 360px;
+    }
+    #greetings .steps {
+        margin-left: 1rem;
+    }
+    /*--greetings end--*/
+
+    /*--footer--*/
+    footer .container .svg1 {
+        padding-right: 1rem;
+    }
+    footer .container .svg2 {
+        padding-left: 1rem;
     }
 }
