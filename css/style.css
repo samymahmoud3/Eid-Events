@@ -22,7 +22,7 @@
     --color-black: #000;
     --color-bg: #f68b1f;
 
-    --container-width-lg: 85%;
+    --container-width-lg: 80%;
     --container-width-md: 90%;
     --container-width-sm: 94%;
 
@@ -59,6 +59,7 @@ header {
     z-index: 4440;
 }
 
+/*--navbar start--*/
 .navbar .container {
     display: flex;
     padding-top: 1rem;
@@ -95,7 +96,15 @@ header {
     font-weight: 200;
 }
 
+.fa-bars {
+    display: none;
+}
+
+.fa-x {
+    display: none;
+}
 /*--navbar end--*/
+
 .swiper {
     width: 100%;
     height: 100vh;
@@ -177,6 +186,7 @@ header {
     height: 100vh;
     margin-bottom: 0;
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 #identity .cards {
@@ -336,7 +346,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem 7rem 0 0rem;
+    padding: 3rem 0rem 0 0rem;
 }
 
 #greetings .eid-cards img {
@@ -429,4 +439,154 @@ footer .container .svg2 {
 #soon .text h1 {
     font-size: 90px;
     font-weight: 700;
+}
+
+/*--media queries tablet--*/
+@media screen and (max-width:992px) {
+    header {
+        position: relative;
+    }
+
+    .container {
+        width: var(--container-width-md);
+        
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /*--header--*/
+    
+    /*--navbar start--*/
+    .navlinks {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        background: #f8b016;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        display: block;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        float: left;
+    }
+
+    .navlinks ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .navlinks ul li a{
+        display: block;
+        margin: 30px 0 0 10px;
+    }
+
+    .navbar .container .navlinks ul li:nth-child(4) {
+        background: none; 
+        padding: 0px ;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        position: absolute;
+        top: 25px;
+        right: 70px;
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .fa-x {
+        position: absolute;
+        top: 20px;
+        right: 140px;
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    /*--navbar end--*/
+
+    .slider-text h2 {
+        font-size: 30px;
+    }
+
+    .slider-text p {
+        font-size: 20px;
+    }
+
+    .sldtxt1 a {
+        width: 270px;
+        font-weight: 200;
+        padding: 10px 5px;
+    }
+
+    .sldtxt2 h2 {
+        font-size: 25px;
+    }
+
+    .sldtxt5 a {
+        width: 223px;
+        font-weight: 200;
+        padding: 10px 5px;
+    }
+    /*--header end--*/
+
+    /*--identity--*/
+    #identity {
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    #identity .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0rem 22%;
+    }
+
+    .file-docer-5 img {
+        z-index: -1;
+    }
+
+    /*--greetings--*/
+    #greetings {
+        height: fit-content;
+    }
+    #greetings .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem 0rem 0 0rem;
+        flex-direction: column;
+    }
 }
