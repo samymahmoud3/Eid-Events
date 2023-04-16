@@ -495,12 +495,23 @@ footer .container .svg2 {
     .navlinks ul {
         display: flex;
         flex-direction: column;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    
+    .navlinks ul li {
+        border-bottom: 2px solid gray;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
 
     .navlinks ul li a{
         display: block;
-        margin: 30px 0 0 10px;
+        margin: 40px 0 0 0px;
+        text-align: center;
     }
 
     .navbar .container .navlinks ul li:nth-child(4) {
