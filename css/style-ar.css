@@ -1,0 +1,86 @@
+a {
+    font-weight: 800;
+}
+
+p {
+    font-weight: 500;
+}
+
+/*--header--*/
+.navbar .container {
+    width: 100%;
+    justify-content: right;
+    margin-right: 2rem;
+}
+
+.navbar .container ul {
+    margin-right: 11%;
+    width: 100%;
+}
+
+.log img {
+    position: absolute;
+    left: 0;
+    padding-left: 3rem;
+}
+
+.swiper-slide img {
+    transform: scaleX(-1);
+}
+
+.slider-text {
+    z-index: 1;
+    text-align: right;
+    font-weight: 900;
+    left: 25%;
+    width: 30%;
+}
+
+.slider-text p {
+    font-size: 28px;
+}
+
+.slider-text a {
+    font-weight: 600;
+}
+
+.sldtxt1 a {
+    width: 156px;
+}
+
+.sldtxt2 a {
+    width: 116px;
+}
+
+.sldtxt3 a {
+    width: 150px;
+}
+
+.sldtxt4 a {
+    width: 165px;
+}
+
+.sldtxt5 a {
+    width: 190px;
+}
+
+/*--greetings--*/
+#greetings .steps img {
+    
+    margin: 2rem 0;
+}
+
+
+
+/*--media queries tablet--*/
+@media screen and (max-width:992px) {
+   /*--navbar start--*/
+    .navbar .container {
+        margin-left: 0rem;
+    }
+
+    .navlinks {
+        direction: ltr;
+    }
+
+}
